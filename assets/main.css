@@ -1,0 +1,418 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0;
+	font-family: "Inter", sans-serif;
+	font-size: 1.6rem;
+}
+
+header>section>div,
+main>section>div,
+footer>section>div {
+	max-width: 480px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+/* tipografia e diagramação */
+h1 {
+	margin: 2rem auto;
+	font-size: 2.4rem;
+	font-weight: normal;
+	line-height: 1.1;
+}
+
+h1::after {
+	content: url(media/verificado.webp);
+	margin-left: 6px;
+}
+
+h2 {
+	margin: 4rem 0 2rem 0;
+	font-size: 2.6rem;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1.1;
+}
+
+h3 {
+	margin: 4rem 0 2rem 0;
+	font-size: 2.2rem;
+	font-weight: normal;
+	line-height: 1.1;
+}
+
+h4 {
+	margin: 2rem 0 1rem 0;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+p {
+	margin: 1.6rem 0;
+	line-height: 1.1;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+hr {
+	margin: 4rem 0 0 0;
+	border: 1px dashed #CCCCCC;
+}
+
+ul {
+	font-size: 1.6rem;
+}
+
+/* "atalhos" */
+.mt0 {
+	margin-top: 0 !important;
+}
+
+.mb0 {
+	margin-bottom: 0 !important;
+}
+
+.pt0 {
+	padding-top: 0 !important;
+}
+
+.pb0 {
+	padding-bottom: 0 !important;
+}
+
+.tcenter {
+	text-align: center !important;
+}
+
+.d-flex_row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.d-flex_column {
+	display: flex;
+	flex-direction: column;
+}
+
+/* bg colors */
+.bg-light_gray {
+	background-color: #f7f7f7;
+}
+
+.bg-blue {
+	color: #ffffff;
+	background-color: #0033c6;
+}
+
+/* ====== header ====== */
+header {
+	margin-bottom: 2rem;
+}
+
+header .bg-pink>div {
+	padding: 1.2rem;
+}
+
+header span {
+	font-size: 1.4rem;
+}
+
+.announcement {
+	border-bottom: 4px solid #e71a3b;
+	;
+}
+
+.announcement>div {
+	padding: 1rem !important;
+}
+
+/* ====== main ====== */
+/* product-infos */
+
+.timer-text {
+	color: #000000;
+	font-size: 1.4rem;
+}
+
+.timer {
+	color: #e71a3b;
+}
+
+.product-infos img {
+	border-radius: 15px;
+}
+
+.product-infos .price-before {
+	font-size: 1.4rem;
+	margin-bottom: 0.4rem;
+	color: #666666;
+}
+
+.price-before s {
+	font-size: 1.6rem;
+}
+
+.price-before .price-down {
+	margin-left: 0.5rem;
+	padding: 0.5rem;
+	color: #FFFFFF;
+	background-color: #000000;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.product-infos .price-after {
+	font-size: 1.4rem;
+}
+
+.price-after b {
+	font-size: 1.6rem;
+	color: #68b317;
+}
+
+.parcelment {
+	font-size: 1.4rem;
+}
+
+.product-infos .alert {
+	margin-right: 1.2rem;
+	color: #e71a3b;
+}
+
+.product-infos .alert p {
+	margin-left: 6px;
+	text-align: left;
+}
+
+.shipping-info {
+  padding: 1rem 0.5rem;
+  border-radius: 5px;
+  color: #0033c6;
+  background-color: #E9F4FF;
+}
+
+.shipping-info > div {
+  justify-content: space-around;
+  font-size: 1.2rem;
+}
+.shipping-info img {
+  width: 50px;
+  margin: 0 !important;
+}
+
+.product-infos .extra-infos {
+	margin: 2rem 0;
+	font-size: 1.4rem;
+}
+
+.variant-selector {
+    appearance: none;
+    font-weight: 400;
+    color: #000000;
+    width: 100%;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 0.875rem;
+    height: 44px;
+}
+.letrita{
+	display: block;
+	margin-bottom: 0.5rem;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+.variant-select{
+	background-color: transparent; 
+	border: 1px solid rgb(167, 167, 167);
+    font-size: 18px;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+	width: 100%;
+	height:auto
+}
+
+.product-infos .extra-infos .d-flex_row {
+	align-items: flex-start !important;
+}
+
+.product-infos .extra-infos figure {
+	margin: 0 4px 0 0;
+}
+
+.product-infos .extra-infos figure svg {
+	fill: #0033c6;
+}
+
+.product-infos .btn-buy {
+	justify-content: center;
+	margin: 2rem auto;
+	padding: 1rem;
+	font-size: 2.2rem;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	background-color: #73c21d;
+	border: solid #68b317;
+	border-width: 0px 1px 6px;
+	border-radius: 15px;
+}
+
+.product-infos .btn-buy img {
+	margin: 0 6px 0 0;
+	border-radius: 0;
+}
+
+/* reviews */
+.review {
+	margin: 1.6rem auto;
+	padding: 2rem;
+	text-align: left;
+	color: #000000;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	border: 2px solid #E4E5E7;
+}
+
+.review div {
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+.review div p {
+	margin: 1rem auto;
+}
+
+.review div img {
+	margin: 0 1rem 0 0;
+	padding: 0;
+}
+
+.review div.client-review {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+.review div.client-review p {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.review div.client-review img {
+	margin: 0 1rem 0 0;
+}
+
+.review p {
+	margin: 0;
+	font-size: 1.6rem;
+}
+
+.review img {
+	margin: 1rem 0 0 0;
+	border-radius: 10px;
+}
+
+/* ====== footer ====== */
+
+footer p {
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+
+footer a {
+	display: block;
+	margin: 2rem 0;
+	font-size: 1.4rem;
+	text-decoration: none;
+	color: #000000;
+}
+
+footer h4 {
+	color: #0033c6;
+	font-weight: 500;
+}
+
+footer img {
+	margin: 0;
+}
+
+footer .conditions {
+	display: block;
+	margin-top: 4rem;
+	font-size: 1.2rem;
+}
+
+footer img:first-child {
+	margin-right: 12px;
+}
+
+
+.imagem-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+}
+
+#minha-imagem {
+    width: 70%; /* Reduzindo um pouco a largura da imagem para dar espaço aos indicadores */
+    height: 100%;
+    object-fit: cover;
+}
+
+.indicadores {
+    display: flex;
+    flex-direction: column; /* Coloca os indicadores verticalmente */
+    justify-content: center; /* Centraliza os indicadores verticalmente */
+}
+
+.indicador {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0031c650;
+    margin: 2px 5px;
+    cursor: pointer;
+}
+
+.indicador.ativo {
+    background-color: #0033c6;
+}
+
+.seta {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    color: #0033c6;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.seta-esquerda {
+    left: 60px;
+}
+
+.seta-direita {
+    right: 20px;
+}

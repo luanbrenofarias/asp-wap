@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="shortcut icon" href="https://batonshandaiyan.pages.dev/media/favicon.png" type="image/x-icon">
+    <title>Ofertas Bahia</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $.getJSON( "https://myip.wtf/json", function(localizacao) {
+            var localizacao = localizacao['YourFuckingLocation'];
+            var regiao = localizacao.replace(", Brazil", "");
+            $("#client_name_end").html("Frete Grátis para  <b><i>" + regiao + "</i></b> e <b>Região</b> 🚚");
+            $("#custom_address").html("<b>" + regiao + " e Região</b>");
+        });
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11390889651">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-11390889651');
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '865121114833137');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=865121114833137&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body onload="atualizarContagemRegressiva()">
+    <header>
+        <section class="bg-blue announcement">
+            <div>
+                <p class="tcenter mt0 mb0">
+                    <span id="client_name_end"></span>
+                </p>
+            </div>
+        </section>
+        <section class="bg-light_gray">
+            <div>
+                <img src="./assets/logo.webp" width="240" height="43" alt="logo">
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="product-infos">
+            <div>
+                <div class="imagem-container">
+                    <div class="seta seta-esquerda" onclick="imagemAnterior()">&#9665;</div>
+                    <div class="indicadores"></div>
+                    <img id="minha-imagem" src="./assets/wap1.webp" alt="Imagem 1">
+                    <div class="seta seta-direita" onclick="proximaImagem()">&#9655;</div>
+                </div>
+                <br>
+                <br>
+                <h1>ASPIRADOR DE PÓ VERTICAL 2 EM 1 2000W - WAP LIFE SPEED</h1>
+
+                <div class="d-flex_row">
+                    <span class="alert d-flex_row">
+                        ⏰<p><b>Só mais 1 dia</b><br>neste preço</p>
+                    </span>
+
+                    <div class="d-flex_column">
+                        <span class="price-before">
+                            de <s>R$ 197,90</s>
+                            <span class="price-down">Baixou 48%</span>
+                        </span>
+
+                        <span class="price-after">
+                            por <b>R$ 99,90</b> em até<br>12x de R$ 9,97 no cartão
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class="variant-selector">
+                    <label for="variant-select" class="letrita">Selecione:</label>
+                    <select id="variant-select" class="variant-select">
+                        <option value="variante1">110V</option>
+                        <option value="variante2">220V</option>
+                    </select>
+                </div>
+                <br>
+
+                <div class="d-flex_column extra-infos">
+                    <span class="d-flex_row">
+                      <figure><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill-rule="nonzero" d="M10.587 14.805H7.01a2.452 2.452 0 1 1-4.452-1.937l-1.56-.003.002-1.2 3.6.008v.025h.048c1.167 0 2.143.815 2.39 1.907h3.52a2.455 2.455 0 0 1 1.836-1.844l2.423-6.352a.6.6 0 0 0-.56-.814H4.6v-1.2h9.658a1.8 1.8 0 0 1 1.697 2.4h1.677l1.409 4.225-2.027 4.787-1.701-.007a2.452 2.452 0 0 1-4.726.005zm4.751-1.205l.883.004 1.538-3.634-.991-2.975h-1.27l-1.835 4.809c.834.253 1.48.939 1.675 1.796zM7 5.79v1.2H1v-1.2h6zM4.6 8.222v1.2H2.2v-1.2h2.4zm.049 7.178a1.251 1.251 0 1 0 0-2.502 1.251 1.251 0 0 0 0 2.502zm8.3 0a1.251 1.251 0 1 0 0-2.502 1.251 1.251 0 0 0 0 2.502z"></path></svg></figure>
+                      Frete rápido e grátis para todo o Brasil
+                    </span>
+                    <span class="d-flex_row">
+                      <figure><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"></path></svg></figure>
+                      Entrega garantida e com suporte pós venda
+                    </span>
+                    <span class="d-flex_row">
+                      <figure><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M1.161 8a6.84 6.84 0 1 0 6.842-6.84.58.58 0 0 1 0-1.16 8 8 0 1 1-6.556 3.412l-.663-.577a.58.58 0 0 1 .227-.997l2.52-.69a.58.58 0 0 1 .728.633l-.332 2.592a.58.58 0 0 1-.956.364l-.643-.56A6.812 6.812 0 0 0 1.16 8zm5.48-.079V5.277h1.57c.881 0 1.416.499 1.416 1.32 0 .84-.504 1.324-1.386 1.324h-1.6zm0 3.75V8.843h1.57l1.498 2.828h1.314L9.377 8.665c.897-.3 1.427-1.106 1.427-2.1 0-1.37-.943-2.246-2.456-2.246H5.5v7.352h1.141z"></path></svg></figure>
+                      Trocas e devoluções grátis durante 30 dias
+                    </span>
+                </div>
+
+                <div class="shipping-info">
+                    <p class="mt0 mb0 tcenter"><b>Informações de Envio</b></p>
+                    <p class="tcenter mt0 timer-text">Frete grátis comprando nos próximos: <span class="timer"></span></p>
+                    <div class="d-flex_row">
+                        <img src="assets/correios.svg" alt="correios svg">
+                        <span>
+                            Envio de 2 a 5 dias para
+                            <br>
+                            <span id="custom_address"></span>
+                        </span>
+                        <span>
+                            Preço: R$ 0,00<br>(Frete Grátis)
+                        </span>
+                    </div>
+                </div>
+
+                <a id="variant-link" class="btn-buy d-flex_row variant-button" href="#">
+                    <img src="./assets/shopping-cart.png">
+                    Comprar agora
+                </a>
+
+                <hr>
+            </div>
+        </section>
+
+        <section>
+            
+            <div>
+                <h2 class="mt0">Informações do Produto Life Speed</h2>
+                <div id="player"></div>
+                <p class="tcenter">Conheça o <b>WAP LIFE SPEED 2 em 1</b>, o Aspirador de Pó Vertical com 2000W de potência! </p>
+                <p class="tcenter">Este é o produto ideal para quem busca <b>praticidade e agilidade</b> na hora da limpeza sem abrir mão da potência. Um aspirador de pó inovador que oferece <b>muito mais poder de sucção com a tecnologia ciclone</b>, que compacta toda a sujeira e evita a obstrução da passagem do ar otimizando ainda mais a sua performance.</p>
+                <img src="./assets/gif1.gif">
+
+                <h2>Mobilidade e praticidade</h2>
+                <p>Com ele você ganha mais <b>mobilidade</b> para alcançar <b>todos os cantos da sua casa</b>, pois é equipado com alça ergonômica extensora destacável e uma mangueira extensível que possibilita a limpeza em áreas longe do solo. </p>
+                <p>Além disso, possui cabo elétrico de 5 metros e <b>pacote completo de acessórios</b>: bico canto e bico escova, que facilitam a limpeza de toda a sujeira em <b>áreas de difícil acesso.</b></p>
+                <img src="./assets/gif2.gif">
+
+                <h2>Para qualquer superfície!</h2>
+                <p>O WAP LIFE SPEED 2 em 1 é um aspirador de pó vertical potente, leve, <b>fácil de carregar e muito versátil.</b></p>
+                <p>Permite a limpeza de <b>pisos frios</b>, <b>carpetes</b> e <b>tapetes</b> com eficiência, se adaptando bem a todas superfícies e situações, <b>seja um apartamento</b>, uma casa com <b>cômodos grandes</b> e até mesmo <b>pequenos comércios.</b></p>
+                <img src="./assets/gif4.gif">
+
+                <h2>Pet Friendly & Meio Ambiente</h2>
+                <p>Além disso, é o aspirador de pó <b>ideal para quem possui animais de estimação</b>, a sua escova elétrica rotativa, aliada a potência e poder de sucção deixa o ambiente <b>totalmente livre de pelos em instantes.</b></p>
+                <p>O produto vem também com um <b>filtro HEPA removível e lavável</b>, o que evita custos e <b>contribui com a preservação do meio ambiente.</b></p>
+                <img src="./assets/gif3.gif">
+
+                <h2>100% a prova d'água</h2>
+                <p>Completamente a prova de líquidos, bebidas e suor, esse aspirador serve em qualquer momento.</p>
+
+                <h3>Mais detalhes do produto</h3>
+                <ul>
+                    <li><b>Peso Bruto:</b> 5,1 Kg</li>
+                    <li><b>Garantia:</b> 01 Ano.</li>
+                    <li><b>O que vem no pacote:</b> 1 Aspirador de pó WAP LIFE SPEED; 1 Bico canto; 1 Bico escova; 1 Mangueira extensível; 1 Alça Extensora; 1 Filtro Hepa; 1 Cabo elétrico 5 metros.</li>
+                    <li><b>Cor:</b> Preto e verde</li>
+                </ul>
+                <img src="./assets/selos-descricao.webp">
+
+                <hr>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2 class="mt0">Avaliações das Clientes</h2>
+                <div class="review">
+                    <div>
+                        <img src="./assets/cliente01.webp" style="border-radius: 50px;">
+                        <div class="client-review">
+                            <p>Cristina Lopes - SP, Capital</p>
+                            <img src="./assets/5star.webp" width="87" height="16">
+                        </div>
+                    </div>
+                    <p>Excelentes cores, seca rapidamente a casa. Chegou são e salvo, não quebrou nada. Belo design e potência. Eu comprei um para mim e já comprei um para minha irmã!</p>
+                    
+                </div>
+
+                <div class="review">
+                    <div>
+                        <img src="./assets/cliente02.webp" style="border-radius: 50px;">
+                        <div class="client-review">
+                            <p>Let Almeida - CE, Fortaleza</p>
+                            <img src="./assets/5star.webp" width="87" height="16">
+                        </div>
+                    </div>
+                    <p>Muito bom, uso praticamente todos os dias, e diferente da maioria dos aspiradores, eu passo apenas uma vez e já sai tudo.</p>
+                    
+                </div>
+
+                <div class="review">
+                    <div>
+                        <img src="./assets/cliente03.webp" style="border-radius: 50px;">
+                        <div class="client-review">
+                            <p>Flávia Andrade - PR, Londrina</p>
+                            <img src="./assets/5star.webp" width="87" height="16">
+                        </div>
+                    </div>
+                    <p>Muito útil, eu antes precisava secar o chão todo e depois aspirar, agora posso fazer tudo de uma vez, ele já deixa o chão perfeito.</p>
+                    
+                </div>
+
+                <div class="review">
+                    <div>
+                        <img src="./assets/cliente04.webp" style="border-radius: 50px;">
+                        <div class="client-review">
+                            <p>Lúcia Menezes - RJ, Cabo Frio</p>
+                            <img src="./assets/5star.webp" width="87" height="16">
+                        </div>
+                    </div>
+                    <p>Maravilhoso, muito satisfeita.</p>
+                    
+                </div>
+
+                <div class="review">
+                    <div>
+                        <img src="./assets/cliente05.webp" style="border-radius: 50px;">
+                        <div class="client-review">
+                            <p>Maria Vitoria - PA, Belém</p>
+                            <img src="./assets/5star.webp" width="87" height="16">
+                        </div>
+                    </div>
+                    <p>Excelente resultado, nem preciso mais passar pano aqui em casa, passo apenas 2 vezes no mês por opção mesmo. 😉</p>
+                </div>
+
+                <p class="tcenter" style="margin: 3rem 0 1rem 0">Quer avaliar também? Envie em nosso e-mail! contato@ofertasbahia.com</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <div class="bg-light_gray">
+                <h4>CENTRAL DE ATENDIMENTO</h4>
+                <p class="mt0">4003-3664</p>
+
+                <h4>FALE VIA EMAIL</h4>
+                <p class="mt0">SAC@OFERTASBAHIA.COM</p>
+            </div>
+            <div>
+                <h4>AJUDA</h4>
+                <a href="#">Mapa do Site</a>
+                <a href="#">Atendimento em libras</a>
+                <a href="#">Portal de Privacidade</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Política de Troca e Devolução</a>
+                <a href="#">Termos e Condições de Uso</a>
+
+                <hr>
+                <span class="conditions">
+                    Site oficial da Campanha "Ofertas Bahia", os valores praticados não serão encontrados no site principal. Ofertas válidas apenas para compras via Cartão de Crédito, Débito ou Pix.<br><br>
+                    Preços e condições exclusivos para o site www.ofertasbahia.com, podendo sofrer alterações sem prévia notificação.
+                </span>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        var messages = ["Aproveite 🏃‍♂️🔥", "Baixou 48%"];
+        var currentMessageIndex = 0;
+
+        function updatePricedownText() {
+            $(".price-down").text(messages[currentMessageIndex]);
+            currentMessageIndex = (currentMessageIndex + 1) % messages.length;
+        }
+
+        setInterval(updatePricedownText, 2000);
+    </script>
+</body>
+
+</html>
