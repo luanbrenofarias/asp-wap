@@ -10,7 +10,7 @@ document.getElementById('variant-select').addEventListener('change', function() 
             selectedLink = 'https://checkout.avizz.com.br/l/e379c68a-74e9-4904-9ef4-2cc4fb949d2e?_h=YXZpenouY29tLmJy';
             break;
         default:
-            selectedLink = '#'; 
+            selectedLink = 'https://checkout.avizz.com.br/l/e379c68a-74e9-4904-9ef4-2cc4fb949d2e?_h=YXZpenouY29tLmJy'; 
     }
 
     document.getElementById('variant-link').href = selectedLink;
