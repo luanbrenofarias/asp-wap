@@ -4,10 +4,10 @@ document.getElementById('variant-select').addEventListener('change', function() 
 
     switch(selectedVariant) {
         case 'variante1':
-            selectedLink = 'https://www.exemplo.com/variante1';
+            selectedLink = 'https://checkout.avizz.com.br/l/e379c68a-74e9-4904-9ef4-2cc4fb949d2e?_h=YXZpenouY29tLmJy';
             break;
         case 'variante2':
-            selectedLink = 'https://www.exemplo.com/variante2';
+            selectedLink = 'https://checkout.avizz.com.br/l/e379c68a-74e9-4904-9ef4-2cc4fb949d2e?_h=YXZpenouY29tLmJy';
             break;
         default:
             selectedLink = '#'; 
